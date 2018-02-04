@@ -1,8 +1,8 @@
 %%%%the function define a n!.
 %%%%in this function,the function invoke itself
 >>> def fact(n):
-	if n==0:
-		return 1
+	if n==0:%%%%%it's necessary,because if it missed ,the function maybe recycled again and again
+		return 1 %%%%%
 	else:
 		return n*fact(n-1)
 
