@@ -1,0 +1,13 @@
+def addinterest(balance,rate):
+	newbalance=balance*(1+rate)
+	balance=newbalance
+addinterest(amount,0.05)
+>>> amount
+1000
+>>> def addinterest(balance,rate):
+	newbalance=balance*(1+rate)
+	balance=newbalance
+	return(balance)
+
+>>> addinterest(amount,0.05)
+1050.0
