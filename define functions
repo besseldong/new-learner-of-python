@@ -1,9 +1,10 @@
-def addinterest(balance,rate):
+>>>def addinterest(balance,rate):
 	newbalance=balance*(1+rate)
 	balance=newbalance
 addinterest(amount,0.05)
 >>> amount
 1000
+
 >>> def addinterest(balance,rate):
 	newbalance=balance*(1+rate)
 	balance=newbalance
@@ -11,3 +12,26 @@ addinterest(amount,0.05)
 
 >>> addinterest(amount,0.05)
 1050.0
+
+ >>>def addinterest(balance,rate):
+	newbalance=balance*(1+rate)
+
+	
+>>> amountt=1000
+
+>>> addinterest(amountt,0.05)
+>>> newbalance
+Traceback (most recent call last):
+  File "<pyshell#156>", line 1, in <module>
+    newbalance
+NameError: name 'newbalance' is not defined
+>>> def addinterest(balance,rate):
+	newbalance=balance*(1+rate)
+	return newbalance
+
+>>> addinterest(amountt,0.05)
+1050.0
+>>> amountt
+1000
+%%%%from the code i run just before, we can easily see that the formal parameter is different with the actual parameters.the formal parameter just receives the value of actural parameter, 
+%%%but it cannot have a influence on actual parameter. but we can use "return" to change this situation.
