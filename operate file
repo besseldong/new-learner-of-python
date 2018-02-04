@@ -1,0 +1,29 @@
+###the main function define how to read a file
+>>> def main():
+	fname=input("Enter filename: ")
+	infile=open(fname,"r")
+	data=infile.read()
+	print(data)
+>>> main()
+Enter filename: /home/bessel/geant4/clearwindow.txt
+" 
+ 
+Clear Window Extension 
+Version: 0.2 
+ 
+Author: Roger D. Serwy 
+        roger.serwy@gmail.com 
+ 
+Date: 2009-06-14 
+ 
+It provides "Clear Shell Window" under "Options" 
+with ability to undo. 
+ 
+Add these lines to config-extensions.def 
+ 
+[ClearWindow] 
+enable=1 
+enable_editor=0 
+enable_shell=1 
+[ClearWindow_cfgBindings] 
+clear-window=<Control-Key-l> 
