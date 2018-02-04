@@ -35,3 +35,14 @@ NameError: name 'newbalance' is not defined
 1000
 %%%%from the code i run just before, we can easily see that the formal parameter is different with the actual parameters.the formal parameter just receives the value of actural parameter, 
 %%%but it cannot have a influence on actual parameter. but we can use "return" to change this situation.
+%%%%%%but if the variable is a variable target(for example, a list or a picture),the object will become a modified state. the example as below
+>>> def addinterest(balances,rate):
+	for i in range(len(balances)):
+		balances[i]=balances[i]*(1+rate)
+
+		
+>>> amounts=[1000,105,3500,739]
+>>> rate=0.5
+>>> addinterest(amounts,rate)
+>>> amounts
+[1500.0, 157.5, 5250.0, 1108.5]
